@@ -7,7 +7,7 @@ const App = () => {
   const [shouldRender, setShouldRender] = useState(true);
 
   useEffect(() => {
-    axios.get("http://www.boredapi.com/api/activity/").then((res) => {
+    axios.get("https://www.boredapi.com/api/activity/").then((res) => {
       console.log(res);
       setActivity(res.data.activity);
     });
