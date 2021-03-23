@@ -8,7 +8,7 @@ const App = () => {
 
   useEffect(() => {
     axios.get("https://www.boredapi.com/api/activity/").then((res) => {
-      console.log(res);
+      //console.log(res);
       setActivity(res.data.activity);
     });
     setTimeout(() => {
